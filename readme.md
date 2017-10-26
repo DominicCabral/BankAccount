@@ -2,9 +2,8 @@
 
 ## Description
 
-_Write a main program that creates three accounts (one from each class: BankAccount, MoneyMarketAccount, and
-CDAccount) and transfers funds from each account to another one. Show relationship between these three
-classes using a UML diagram_
+_A program that creates three accounts (one from each class: BankAccount, MoneyMarketAccount, and
+CDAccount) and transfers funds from each account to another one._
 
 ## main.cpp
 
