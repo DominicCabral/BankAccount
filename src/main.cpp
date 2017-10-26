@@ -3,8 +3,8 @@
 //  HW8
 //
 //  Created by Dominic Cabral on 11/27/14.
+//  Update by Dominic Cabral on 10/25/17
 //  Copyright (c) 2014 Umass Lowell. All rights reserved.
-//
 
 #include <iostream>
 #include "BankAccount.h"
@@ -63,7 +63,8 @@ int main()
     cout<<cda1<<endl;
     
     //Transfer method
-    cout << "Transfering 10 from " << cda1.getName() << " to " << mma1.getName() << "..." << endl;
+    cout << mma1 << endl;
+    cout << "Transfering 10 from " << cda1.getName() << " to " << mma1.getName() << " (withdrawl includes penatly)..." << endl;
     cda1.transfer(10, mma1);
     cout << cda1 << endl;
     cout << mma1 << endl;

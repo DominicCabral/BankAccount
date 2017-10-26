@@ -3,13 +3,18 @@
 //  HW8
 //
 //  Created by Dominic Cabral on 11/27/14.
+//  Update by Dominic Cabral on 10/25/17
 //  Copyright (c) 2014 Umass Lowell. All rights reserved.
 //
 
 #include "BankAccount.h"
 
+
+
+// Base class for all types of Bank Accounts
 BankAccount::BankAccount()
-{   name = "";
+{   
+    name = "";
     balance = 0.00;
 };
 
@@ -85,14 +90,16 @@ MoneyMarketAccount::MoneyMarketAccount(string accountname, float amount)
 double MoneyMarketAccount::withdraw(float amount)
 {
     if (numberOfWithdrawls>=1)
-    {   numberOfWithdrawls+=1;
+    {   
+        numberOfWithdrawls+=1;
         if((BankAccount::withdraw(amount+1.50))==1)
         {return 1;}
         else
             return 0;
     }
     else
-    {   numberOfWithdrawls+=1;
+    {   
+        numberOfWithdrawls+=1;
         if((BankAccount::withdraw(amount))==1)
         {return 1;}
         else
@@ -125,13 +132,17 @@ void CDAccount::applyinterest()
 double CDAccount::withdraw(float amount)
 {
     double penalty;
-    
+
     penalty = interestAdded*.25;
     
     if(BankAccount::withdraw(amount+penalty)==1)
-    {return 1;}
+    {
+        return 1;
+    }
     else
-    {return 0;}
+    {
+        return 0;
+    }
 }
 
 
