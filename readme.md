@@ -15,4 +15,4 @@ before and after
 - for each pair of accounts transfer money between them, output the type and status of the account
 before and after transfer
 
-_see [here]./docs/proj_desc.pdf for more details_
+_see [here]: ./docs/proj_desc.pdf for more details_
