@@ -1,4 +1,4 @@
-# Inheritance Assignment
+# BankAccount
 
 ## Description
 
